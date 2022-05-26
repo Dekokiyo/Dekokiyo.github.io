@@ -105,3 +105,12 @@ nav ul li:hover .subMenu-1 ul li {
 nav ul li:hover .subMenu-1 ul li:last-child {
     border: none;
 }
+
+.kiyaku {
+    text-align: center;
+    font-weight: 500;
+}
+
+.nobig-text {
+    font-size: 30px;
+}

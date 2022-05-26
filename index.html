@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/scrollreveal"></script>
         <title>TheOtherRolesGM kiyoMugi Edition Wiki</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="title">
-            <h1 style="color: aqua; font-style: italic; text-align: center; font-size: 70px;"><font face="Ink Free">TheOtherRolesGM</font></h1>
-            <h1 style="color: aqua; font-style: italic; text-align: center; font-size: 70px;"><font face="Ink Free">KiyoMugi Edition</font></h1>
-            <h1 style="color: aqua; font-style: italic; text-align: center; font-size: 70px;"><font face="Ink Free">Official Wiki</font></h1>
+        <div class="header">
+            <nav class="navbar">
+                <a class="logo">TheOtherRolesGM KiyoMugi Edition Wiki</a>
+                <ul class="menu">
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="https://github.com/Dekokiyo/TheOtherRolesGM-KiyoMugi-Edition">Github</a>
+                        <div class="subMenu-1">
+                            <ul>
+                                <li><a href="https://github.com/Dekokiyo">DekoKiyo</a></li>
+                                <li><a href="https://github.com/Dekokiyo/TheOtherRolesGM-KiyoMugi-Edition">Githubページ</a></li>
+                                <li><a href="https://github.com/Dekokiyo/TheOtherRolesGM-KiyoMugi-Edition/releases">DLページ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">機能</a>
+                        <div class="subMenu-1">
+                            <ul>
+                                <li><a href="#">クライアント設定</a></li>
+                                <li><a href="#">ゲーム設定</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">役職解説</a>
+                        <div class="subMenu-1">
+                            <ul>
+                                <li><a href="#">クルーメイト</a></li>
+                                <li><a href="#">インポスター</a></li>
+                                <li><a href="#">第三陣営</a></li>
+                                <li><a href="#">属性役職</a></li>
+                                <li><a href="#">その他役職</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">製作者</a>
+                        <div class="subMenu-1">
+                            <ul>
+                                <li><a href="https://dekokiyo.github.io/About/DekoKiyo.html">清盛<br/>(DekoKiyo)</a></li>
+                                <li><a href="#">麦茶<br/>(Reitou-Mugicha)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text-gaiyoh">
+            <p class="big-text">
+                このModの概要
+            </p>
+            <p>このModは、TheOtherRolesGMをKiyomoriとMugichaによって色々な機能が追加された改造版である。</p>
         </div>
         <script>
-
+            const menu = document.querySelector(".menu");
+            const navbar = document.querySelector(".navbar");
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset >= menu.offsetTop) {
+                //stickyクラスをnavbarに付与する。
+                navbar.classList.add("sticky");
+                } else {
+                navbar.classList.remove("sticky");
+                }
+            });
         </script>
     </body>
 </html>

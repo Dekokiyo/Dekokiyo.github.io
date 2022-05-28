@@ -70,11 +70,41 @@ nav.sticky ul {
     background-color: #008ab4;
 }
 
-.kiyaku {
-    text-align: center;
-    font-weight: 500;
+.subMenu-1 {
+    position: absolute;
+    background-color: #00c3ff;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
 }
 
-.nobig-text {
-    font-size: 30px;
+nav ul li:hover .subMenu-1 {
+    display: block;
+}
+
+nav ul li:hover .subMenu-1 ul li {
+    display: block;
+    width: 140px;
+    border-bottom: 1px dotted white;
+}
+
+nav ul li:hover .subMenu-1 ul li:last-child {
+    border: none;
+}
+
+.text-gaiyoh {
+    text-align: center;
+}
+
+.text-gaiyoh p {
+    font-size: 20px;
+}
+
+.text-gaiyoh h1 {
+    font-size: 100px;
+}
+
+.text-gaiyoh h2 {
+    font-size: 50px;
 }

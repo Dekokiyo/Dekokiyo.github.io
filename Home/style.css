@@ -51,15 +51,11 @@ nav ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.text-gaiyoh {
-    padding: 20px 10%;
-}
-
 nav.sticky {
     position: fixed;
     left: 0;
     top: 0;
-    background: black;
+    background: #00c3ff;
     justify-content: center;
     align-content: center;
     transition: 0.6s;
@@ -69,41 +65,9 @@ nav.sticky ul {
     background-color: transparent;
 }
 
-.big-text {
-    font-size: 50px;
-}
-
-.text-gaiyoh {
-    font-size: 20px;
-}
-
 .active,
 .header ul li:hover {
     background-color: #008ab4;
-
-}
-
-.subMenu-1 {
-    position: absolute;
-    background-color: #00c3ff;
-    margin-top: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: none;
-}
-
-nav ul li:hover .subMenu-1 {
-    display: block;
-}
-
-nav ul li:hover .subMenu-1 ul li {
-    display: block;
-    width: 140px;
-    border-bottom: 1px dotted white;
-}
-
-nav ul li:hover .subMenu-1 ul li:last-child {
-    border: none;
 }
 
 .kiyaku {

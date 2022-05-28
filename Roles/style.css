@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DotGothic16', sans-serif;
+    text-decoration: none;
 }
 
 .header {
@@ -55,7 +56,7 @@ nav.sticky {
     position: fixed;
     left: 0;
     top: 0;
-    background: black;
+    background: #00c3ff;
     justify-content: center;
     align-content: center;
     transition: 0.6s;
@@ -68,6 +69,29 @@ nav.sticky ul {
 .active,
 .header ul li:hover {
     background-color: #008ab4;
+}
+
+.subMenu-1 {
+    position: absolute;
+    background-color: #00c3ff;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+nav ul li:hover .subMenu-1 {
+    display: block;
+}
+
+nav ul li:hover .subMenu-1 ul li {
+    display: block;
+    width: 140px;
+    border-bottom: 1px dotted white;
+}
+
+nav ul li:hover .subMenu-1 ul li:last-child {
+    border: none;
 }
 
 .subMenu-1 {
@@ -125,4 +149,66 @@ nav ul li:hover .subMenu-1 ul li:last-child {
 
 .oth {
     color:rgb(255, 0, 1);
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    background-color:rgb(100, 200, 200);
+    width: 250px;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.sidebar header {
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(140, 255, 255);
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    line-height: 22px;
+    color:blue;
+    font-size: 20px;
+    padding-left: 20px;
+    transition: 0.1s;
+}
+
+ul li:hover a {
+    padding-left: 0px;
+}
+
+#check {
+    display: none;
+}
+
+.crew-description,
+.nice-guesser,
+.detective,
+.engineer,
+.hacker,
+.lighter,
+.mayor,
+.medic,
+.keibi,
+.seer,
+.sheriff,
+.shifter,
+.snitch,
+.spy,
+.nice-swapper,
+.time-master,
+.tracker,
+.bait,
+.medium,
+.uranai,
+.sprinter,
+.chuni,
+.portal,
+.yakuza {
+    text-align: center;
 }

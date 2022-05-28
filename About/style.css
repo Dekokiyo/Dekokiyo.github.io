@@ -9,7 +9,7 @@
 
 .header {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
 }
 
 nav {
@@ -39,8 +39,8 @@ nav ul li {
     margin: 20px 30px;
     width: 120px;
     margin: 0 35px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     transition: all 0.2s;
 }
 
@@ -73,7 +73,7 @@ nav.sticky ul {
 .subMenu-1 {
     position: absolute;
     background-color: #00c3ff;
-    margin-top: 25px;
+    margin-top: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: none;
@@ -91,6 +91,10 @@ nav ul li:hover .subMenu-1 ul li {
 
 nav ul li:hover .subMenu-1 ul li:last-child {
     border: none;
+}
+
+.no-click {
+    color: white;
 }
 
 .name {

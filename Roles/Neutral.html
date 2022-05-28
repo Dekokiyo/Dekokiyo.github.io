@@ -5,8 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://unpkg.com/scrollreveal@4"></script>
-        <title>About Mugicha</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Neutral</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+        />
     </head>
     <body>
         <div class="header">
@@ -53,6 +60,137 @@
                 </ul>
             </nav>
         </div>
+        <div class="neu-sidebar">
+            <header>役職一覧<br/><p class="neutral-gray">第三陣営</p></header>
+            <ul>
+                <li>
+                    <a href="#ah">アーソニスト</a>
+                </li>
+                <li>
+                    <a href="#js">ジェスター</a>
+                </li>
+                <li>
+                    <a href="#jc">ジャッカル</a>
+                </li>
+                <li>
+                    <a href="#sk">サイドキック</a>
+                </li>
+                <li>
+                    <a href="#lo">ラバーズ</a>
+                </li>
+                <li>
+                    <a href="#vu">ヴァルチャー</a>
+                </li>
+                <li>
+                    <a href="#la">弁護士</a>
+                </li>
+                <li>
+                    <a href="#cs">チェインシフター</a>
+                </li>
+                <li>
+                    <a href="#pd">ペスト医師</a>
+                </li>
+                <li>
+                    <a href="#yh">妖狐 & 背徳者</a>
+                </li>
+            </ul>
+        </div>
+        <div class="crew-description">
+            <p class="neutral">第三陣営</p>
+            <p class="neu-text">第三陣営はそれぞれの役職の<br>単独又は追加勝利条件を満たすことを目的とします。<br>TheOtherRolesGM KMでは9種類12個の役職を追加します。</p>
+            <br/>
+            <br/>
+            <p class="neu-text">スクロールしてください</p>
+            <p class="neu-text">↓</p>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <div class="role-description">
+            <div class="arsonist" id="ah">
+                <h2 class="arsonist-title">アーソニスト</h2>
+                <p>アーソニストは生きているプレイヤー全員にオイルを塗って燃やすことで単独勝利する第三陣営です。</p>
+                <p>塗っている途中で標的が範囲内から外れたらクールダウンはリセットされます。</p>
+                <br><br>
+            </div>
+            <div class="jester" id="js">
+                <h2 class="jester-title">ジェスター</h2>
+                <p>ジェスターは追放されることで単独勝利する第三陣営です。</p>
+                <p>緊急会議は開けません。サボができるか設定できます。</p>
+                <br><br>
+            </div>
+            <div class="jackal" id="jc">
+                <h2 class="jackal-title">ジャッカル</h2>
+                <p>ジャッカルは他のプレイヤーを排除しようとする第三陣営です。</p>
+                <p>ジャッカルにはタスクは無く、クルー、インポスター、他の第三陣営を殺害できます。</p>
+                <p>設定次第でジャッカルはサイドキックを作れます。</p>
+                <p>サイドキックになったプレイヤーはタスクや以前の役職は削除されジャッカルチームにされます。</p>
+                <p>ジャッカルはインポスターもサイドキックにできますが、</p>
+                <p>設定次第ではそう見えるだけで実際はそうじゃないかもしれません。</p>
+                <p>インポスターとジャッカルが生存している場合、ゲームは終了しません。</p>
+                <p>クルーが全員死亡していてもタスクが終了すればクルーの勝利になります。</p>
+                <br><br>
+            </div>
+            <div class="sidekick" id="sk">
+                <h2 class="jackal-title">サイドキック</h2>
+                <p>サイドキックはジャッカルによって作成されます。</p>
+                <p>サイドキックになった場合、今までのタスクや役職は削除されます。</p>
+                <p>ジャッカルが死んだらサイドキックはジャッカルに昇格します。</p>
+                <br><br>
+            </div>
+            <div class="lovers" id="lo">
+                <h2 class="lovers-title">ラバーズ</h2>
+                <p>ラバーズは常に二人います。</p>
+                <p>ラバーズは最後まで生きていれば勝利することができます。</p>
+                <p>一人が死亡した場合もう一人も死亡します。</p>
+                <p>ラバーズは他の役職と重複する可能性があります。</p>
+                <p>ラバーズの中にインポスターが居なければクルーとの追加勝利になります。</p>
+                <p>ラバーズにジャッカル又はインポスターが含まれていた場合、<br>生きている限りラバーのクルーは勝利のためにタスクはカウントされません。</p>
+                <p>ラバーズチャットを設定で有効にできます。</p>
+                <p>ラバーズはシフターによって引き継ぐことが可能です。</p>
+                <br><br>
+            </div>
+            <div class="vulture" id="vu">
+                <h2 class="vulture-title">ヴァルチャー</h2>
+                <p>ヴァルチャーは指定された死体を食べると単独勝利します。</p>
+                <p>設定で死体に矢印を出すことが可能です。</p>
+                <p>ヴァルチャーがいる場合、クリーナーは存在しません。</p>
+                <br><br>
+            </div>
+            <div class="lawyer" id="la">
+                <h2 class="lawyer-title">弁護士</h2>
+                <p>弁護士は依頼人を持つ第三陣営です。</p>
+                <p>インポスターかジャッカル(依頼人)が誰かわかりその人の勝利条件が勝利条件となる。</p>
+                <p>弁護士が生存した状態でゲームが終了すると弁護士の単独勝利となり依頼人は敗北する。</p>
+                <p>依頼人が死亡したら「追跡者」になる。</p>
+                <p>追跡者になったらひたすら生きることだけを考えよう。最後まで生きたら追加勝利になる。</p>
+                <p>新たに「空砲」という能力を手に入れ、それを人外役職に就けると一回だけキルを免れることができる。</p>
+                <br><br>
+            </div>
+            <div class="chain-shifter" id="cs">
+                <h2 class="chain-shifter-title">チェインシフター</h2>
+                <p>チェインシフターは陣営関係なく役職を奪うことができる。</p>
+                <p>チェインシフターという役職を最後に持っていた者は敗北となる。</p>
+                <br><br>
+            </div>
+            <div class="pest-doc" id="pd">
+                <h2 class="pest-doc">ペスト医師</h2>
+                <p>ペスト医師は生きているプレイヤー全員に病気を感染させることで単独勝利する。</p>
+                <p>感染させるプレイヤーを一人選び、感染者の近くにいる人が徐々に感染していく。</p>
+                <p>ペスト医師は死んでいても勝利することができ、キルした人は強制的に感染する。</p>
+                <p>緊急会議終了後は一定時間感染しないので安全に感染した人から離れることができる。</p>
+                <br><br>
+            </div>
+            <div class="fox-imo" id="yh">
+                <h2 class="fox-imo-title">妖狐 & 背徳者</h2>
+                <p>妖狐はクルーとインポスターから身を隠してタスクを完了させることで単独勝利する第三陣営。</p>
+                <p>妖狐は自分をキルすることができる役職のプレイヤーの位置を常に把握しており、</p>
+                <p>妖狐は身を守る能力をいくつか持っている。</p>
+                <p>妖狐はサボが直せない。</p>
+                <p>背徳者は自分の命を犠牲にしてでもなるべく妖狐を守りきることが目的</p>
+                <br><br>
+            </div>
+        </div>
         <script>
             const menu = document.querySelector(".menu");
             const navbar = document.querySelector(".navbar");
@@ -64,8 +202,39 @@
                 navbar.classList.remove("sticky");
                 }
             });
+
+            $(function(){
+                var headerHeight = $('header').outerHeight() + 150;
+                var urlHash = location.hash;
+                if(urlHash) {
+                    $('body,html').stop().scrollTop(0);
+                    setTimeout(function(){
+                        var target = $(urlHash);
+                        var position = target.offset().top - headerHeight;
+                        $('body,html').stop().animate({scrollTop:position}, 500);
+                    }, 100);
+                }
+                $('a[href^="#"]').click(function(){
+                    var href= $(this).attr("href");
+                    var target = $(href);
+                    var position = target.offset().top - headerHeight;
+                    $('body,html').stop().animate({scrollTop:position}, 500);
+                    return false;
+                });
+            });
         </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            ScrollReveal().reveal('.neutral',{
+                duration: 5000,
+                origin: 'top',
+                return:true
+            });
+            ScrollReveal().reveal('.neu-text',{
+                delay:2000,
+                duration:3000
+            });
+        </script>
     </body>
 </html>

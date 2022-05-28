@@ -5,8 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://unpkg.com/scrollreveal@4"></script>
-        <title>About Mugicha</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Neutral</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+        />
     </head>
     <body>
         <div class="header">
@@ -53,6 +60,79 @@
                 </ul>
             </nav>
         </div>
+        <div class="mod-sidebar">
+            <header>属性一覧<br/><p class="modifier-orange">属性役職</p></header>
+            <ul>
+                <li>
+                    <a href="#op">オポチュニスト</a>
+                </li>
+                <li>
+                    <a href="#sg">サングラス</a>
+                </li>
+                <li>
+                    <a href="#md">マッドメイト</a>
+                </li>
+                <li>
+                    <a href="#wt">ウォッチャー</a>
+                </li>
+                <li>
+                    <a href="#at">アンチテレポート</a>
+                </li>
+                <li>
+                    <a href="#mn">ミニ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="modifier-description">
+            <p class="mod-text">属性役職</p>
+            <p class="mod-text">陣営ではなく属性。<br>役職と重複して付与されます。<br>TheOtherRolesGM KMでは6個の属性を追加します。</p>
+            <br/>
+            <br/>
+            <p class="mod-text">スクロールしてください</p>
+            <p class="mod-text">↓</p>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <div class="role-description">
+            <div class="oppotinist" id="op">
+                <h2 class="oppotinist-title">オポチュニスト</h2>
+                <p>生き残ることで追加勝利となる。</p>
+                <br><br>
+            </div>
+            <div class="sunglasses" id="sg">
+                <h2 class="sunglasses-title">サングラス</h2>
+                <p>サングラスをかけてしまい、視界が狭くなっている。</p>
+                <br><br>
+            </div>
+            <div class="impostor" id="md">
+                <h2 class="impostor-title">マッドメイト</h2>
+                <p>マッドメイトはインポスターを補助するクルーもしくは属性である。</p>
+                <p>機能上はマッドメイトはクルーであるが、インポスターが勝利した場合は一緒に勝利する。</p>
+                <p>マッドメイトはインポスターが誰であるか分からないかつ、その逆でもあります。</p>
+                <p>ただしイビルハッカーによって生み出されたマッドメイトはイビルハッカーが誰か確認できるかつ</p>
+                <p>イビルハッカーは誰がマッドメイトか確認できます。</p>
+                <p>能力を付けることも可能です。</p>
+                <p>狂信者はクルータスクが生成されそのタスクを完了するとインポスターが分かります。インポスターもマッドメイトが誰かわかるようになります。</p>
+                <p>マッドメイトはシェリフにキルされるか設定可能です。</p>
+                <br><br>
+            </div>
+            <div class="watcher" id="wt">
+                <h2 class="watcher-title">ウォッチャー</h2>
+                <p>全員の投票先を見ることができます。</p>
+                <br><br>
+            </div>
+            <div class="anti-teleport" id="at">
+                <h2 class="anti-teleport-title">アンチテレポート</h2>
+                <p>会議後リスポーン地点ではなく前回の位置から行動を再開します。</p>
+                <br><br>
+            </div>
+            <div class="mini" id="mn">
+                <h2 class="mini-title">ミニ</h2>
+                <p>18歳になるまで殺されない。</p>
+                <br><br>
+            </div>
+        </div>
         <script>
             const menu = document.querySelector(".menu");
             const navbar = document.querySelector(".navbar");
@@ -64,8 +144,39 @@
                 navbar.classList.remove("sticky");
                 }
             });
+
+            $(function(){
+                var headerHeight = $('header').outerHeight() + 150;
+                var urlHash = location.hash;
+                if(urlHash) {
+                    $('body,html').stop().scrollTop(0);
+                    setTimeout(function(){
+                        var target = $(urlHash);
+                        var position = target.offset().top - headerHeight;
+                        $('body,html').stop().animate({scrollTop:position}, 500);
+                    }, 100);
+                }
+                $('a[href^="#"]').click(function(){
+                    var href= $(this).attr("href");
+                    var target = $(href);
+                    var position = target.offset().top - headerHeight;
+                    $('body,html').stop().animate({scrollTop:position}, 500);
+                    return false;
+                });
+            });
         </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            ScrollReveal().reveal('.modifier',{
+                duration: 5000,
+                origin: 'top',
+                return:true
+            });
+            ScrollReveal().reveal('.mod-text',{
+                delay:2000,
+                duration:3000
+            });
+        </script>
     </body>
 </html>

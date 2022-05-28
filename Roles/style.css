@@ -122,6 +122,11 @@ nav ul li:hover .subMenu-1 ul li:last-child {
     color:#00c3ff;
 }
 
+.role-title {
+    text-align: center;
+    font-size: 50px;
+}
+
 .roles {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(56, 73, 99);
@@ -152,7 +157,10 @@ nav ul li:hover .subMenu-1 ul li:last-child {
 }
 
 .crew-sidebar,
-.imp-sidebar {
+.imp-sidebar,
+.neu-sidebar,
+.mod-sidebar,
+.oth-sidebar {
     position: fixed;
     left: 0px;
     background-color:rgb(100, 200, 200);
@@ -162,7 +170,10 @@ nav ul li:hover .subMenu-1 ul li:last-child {
 }
 
 .crew-sidebar header,
-.imp-sidebar header {
+.imp-sidebar header,
+.neu-sidebar header,
+.mod-sidebar header,
+.oth-sidebar header {
     font-size: 22px;
     text-align: center;
     line-height: 30px;
@@ -198,42 +209,106 @@ ul li:hover a {
     padding-left: 0px;
 }
 
-#check {
-    display: none;
+.neu-sidebar ul a {
+    display: block;
+    width: 100%;
+    line-height: 22px;
+    color:rgb(132, 132, 132);
+    font-size: 20px;
+    padding-left: 20px;
+    transition: 0.1s;
 }
 
-.crew-description,
-.nice-guesser,
-.detective,
-.engineer,
-.hacker,
-.lighter,
-.mayor,
-.medic,
-.keibi,
-.seer,
-.sheriff,
-.shifter,
-.snitch,
-.spy,
-.nice-swapper,
-.time-master,
-.tracker,
-.bait,
-.medium,
-.uranai,
-.sprinter,
-.chuni,
-.portal,
-.yakuza,
+ul li:hover a {
+    padding-left: 0px;
+}
+
+.mod-sidebar ul a {
+    display: block;
+    width: 100%;
+    line-height: 22px;
+    color:rgb(255, 128, 1);
+    font-size: 20px;
+    padding-left: 20px;
+    transition: 0.1s;
+}
+
+ul li:hover a {
+    padding-left: 0px;
+}
+
+.oth-sidebar ul a {
+    display: block;
+    width: 100%;
+    line-height: 22px;
+    color:rgb(255, 91, 112);
+    font-size: 20px;
+    padding-left: 20px;
+    transition: 0.1s;
+}
+
+ul li:hover a {
+    padding-left: 0px;
+}
+
+.role-description,
 .impostor {
     font-size: 20px;
     text-align: center;
     background-color: rgb(180, 180, 180);
 }
 
+.crew-description {
+    font-size: 50px;
+    text-align: center;
+}
+
+.other-description {
+    font-size: 50px;
+    text-align: center;
+}
+
+.modifier-description {
+    font-size: 50px;
+    text-align: center;
+}
+
+.impostor-title2 {
+    font-size: 120px;
+    color:rgb(255, 25, 25);
+}
+
+.imp-description {
+    font-size: 45px;
+    text-align: center;
+}
+
+.neutral-gray {
+    color:rgb(132, 132, 132);
+}
+
+.modifier-orange {
+    color:rgb(255, 128, 1);
+}
+
 .crewmate {
+    font-size: 120px;
     color:rgb(140, 255, 255);
+}
+
+.neutral {
+    font-size: 120px;
+    color:rgb(132, 132, 132);
+}
+
+.other {
+    font-size: 120px;
+    color:rgb(255, 91, 112);
+}
+
+.modifier {
+    font-size: 120px;
+    color:rgb(255, 128, 1);
 }
 
 .nice-guesser-title {
@@ -327,4 +402,64 @@ ul li:hover a {
 .impostor-title,
 .imp-red {
     color:rgb(255, 25, 25);
+}
+
+.arsonist-title {
+    color:rgb(238, 112, 46);
+}
+
+.jester-title {
+    color:rgb(236, 98, 165);
+}
+
+.jackal-title {
+    color:rgb(0, 180, 235);
+}
+
+.lovers-title {
+    color:rgb(232, 57, 185);
+}
+
+.vulture-title {
+    color:rgb(139, 69, 19);
+}
+
+.lawyer-title {
+    color:rgb(134, 153, 25);
+}
+
+.chain-shifter-title {
+    color:rgb(102, 102, 102);
+}
+
+.pest-doc-title {
+    color:rgb(255, 192, 0);
+}
+
+.fox-imo-title {
+    color:rgb(167, 87, 168);
+}
+
+.oppotinist-title {
+    color:rgb(0, 255, 0);
+}
+
+.mini-title {
+    color:white;
+}
+
+.anti-teleport-title {
+    color:orange;
+}
+
+.watcher-title {
+    color:purple;
+}
+
+.sunglasses-title {
+    color:rgb(119, 136, 153);
+}
+
+.gm-title {
+    color:rgb(255, 91, 112);
 }

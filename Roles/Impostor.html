@@ -128,13 +128,12 @@
                 </li>
             </ul>
         </div>
-        <div class="crew-description">
-            <h1 class="impostor-title">インポスター</h1>
-            <p>インポスターは残っているクルーメイトの人数をインポスターの数と同じにすれば勝利です。</p>
-            <p>TheOtherRolesGM KMでは21種類23個のインポスター役職を追加します。</p>
+        <div class="imp-description">
+            <p class="impostor-title2">インポスター</p>
+            <p class="imp-text">インポスターは残っているクルーメイトの人数を<br>インポスターの数と同じにすれば勝利です。</p>
+            <p class="imp-text">TheOtherRolesGM KMでは21種類23個の<br>インポスター役職を追加します。</p>
             <br/>
-            <br/>
-            <br/>
+            <p class="imp-text">スクロールしてください<br>↓</p>
             <br/>
             <br/>
             <br/>
@@ -268,6 +267,11 @@
             <p>キルクールの長さ、ベント、サボの使用などが設定できます。</p>
             <br><br>
         </div>
+        <div class="impostor" id="dk">
+            <h2 class="impostor-title">ダブルキラー</h2>
+            <p>非同期のキルボタンが二つある。</p>
+            <br><br>
+        </div>
         <div class="impostor" id="as">
             <h2 class="impostor-title">アサシン</h2>
             <p>※本家TOR版ニンジャ</p>
@@ -315,5 +319,16 @@
         </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            ScrollReveal().reveal('.impostor-title2',{
+                duration: 5000,
+                origin: 'top',
+                return:true
+            });
+            ScrollReveal().reveal('.imp-text',{
+                delay:2000,
+                duration:3000
+            });
+        </script>
     </body>
 </html>

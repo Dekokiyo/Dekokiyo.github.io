@@ -5,8 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://unpkg.com/scrollreveal@4"></script>
-        <title>About Mugicha</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Impostor</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+        />
     </head>
     <body>
         <div class="header">
@@ -53,6 +60,227 @@
                 </ul>
             </nav>
         </div>
+        <div class="imp-sidebar">
+            <header>役職一覧<br/><p class="imp-red">インポスター</p></header>
+            <ul>
+                <li>
+                    <a href="#ig">イビルゲッサー</a>
+                </li>
+                <li>
+                    <a href="#bh">バウンティハンター</a>
+                </li>
+                <li>
+                    <a href="#cm">カモフラージャー</a>
+                </li>
+                <li>
+                    <a href="#cl">クリーナー</a>
+                </li>
+                <li>
+                    <a href="#er">イレイサー</a>
+                </li>
+                <li>
+                    <a href="#mf">マフィア</a>
+                </li>
+                <li>
+                    <a href="#mp">モーフィング</a>
+                </li>
+                <li>
+                    <a href="#ts">トリックスター</a>
+                </li>
+                <li>
+                    <a href="#vp">ヴァンパイア</a>
+                </li>
+                <li>
+                    <a href="#wl">ウォーロック</a>
+                </li>
+                <li>
+                    <a href="#wt">ウィッチ</a>
+                </li>
+                <li>
+                    <a href="#nj">ニンジャ</a>
+                </li>
+                <li>
+                    <a href="#is">イビルスワッパー</a>
+                </li>
+                <li>
+                    <a href="#sk">シリアルキラー</a>
+                </li>
+                <li>
+                    <a href="#nk">ネコカボチャ</a>
+                </li>
+                <li>
+                    <a href="#ih">イビルハッカー</a>
+                </li>
+                <li>
+                    <a href="#he">ホークアイ</a>
+                </li>
+                <li>
+                    <a href="#ci">カスタムインポスター</a>
+                </li>
+                <li>
+                    <a href="#dk">ダブルキラー</a>
+                </li>
+                <li>
+                    <a href="#as">アサシン</a>
+                </li>
+                <li>
+                    <a href="#ut">アンダーテイカー</a>
+                </li>
+            </ul>
+        </div>
+        <div class="crew-description">
+            <h1 class="impostor-title">インポスター</h1>
+            <p>インポスターは残っているクルーメイトの人数をインポスターの数と同じにすれば勝利です。</p>
+            <p>TheOtherRolesGM KMでは21種類23個のインポスター役職を追加します。</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <div class="impostor" id="ig">
+            <h2 class="impostor-title">イビルゲッサー</h2>
+            <p>会議中に他のプレイヤーの役職を推測し、正解するとそのプレイヤーを撃つことができます。</p>
+            <p>ただし間違えた場合、ゲッサーが死亡します。</p>
+            <p>ゲッサーは属性を推測できません。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="bh">
+            <h2 class="impostor-title">バウンティハンター</h2>
+            <p>バウンティハンターは標的を殺すとキルクールが非常に短くなります。</p>
+            <p>ただしターゲット以外を殺すとキルクールが追加されます。</p>
+            <p>ターゲットは一定時間で変わります。</p>
+            <p>インポスター、スパイ、また、ラバーズならその相方はターゲットになりません。</p>
+            <p>キルするとターゲットが更新されます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="cm">
+            <h2 class="impostor-title">カモフラージャー</h2>
+            <p>カモフラージャーは能力を発動すると全員が同じ色になります。</p>
+            <p>また、名前、帽子、バイザー、スキン、ペットが隠されます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="cl">
+            <h2 class="impostor-title">クリーナー</h2>
+            <p>クリーナーは死体を掃除できます。</p>
+            <p>キルクールと掃除クールダウンは共有されます。</p>
+            <p>クリーナーがいる場合、ヴァルチャーは出現しません。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="er">
+            <h2 class="impostor-title">イレイサー</h2>
+            <p>イレイサーはプレイヤーの役職を削除できます。</p>
+            <p>会議で追放の直前で役職の消去が実行されます。</p>
+            <p>1回消すごとにクールダウンが10秒伸びます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="mf">
+            <h2 class="impostor-title">マフィア</h2>
+            <p>マフィアは3人のインポスターで構成されるチーム役職です。</p>
+            <p>ゴッドファーザーは通常のインポスターと同じです。</p>
+            <p>マフィオソはゴッドファーザーが死んだら通常のインポスターの能力を得ます。</p>
+            <p>ジャニターはキルはできませんが死体を隠せます。</p>
+            <p>マフィアを生成するにはバニラの設定で3人インポスターが出現するように設定しなければいけない上に</p>
+            <p>Modの設定でインポスターロールを3以上にする必要があります。</p>
+            <p>ジャニターだけが生き残っている場合、キルできるインポスターが居なくなるため、インポスターの敗北となります。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="mp">
+            <h2 class="impostor-title">モーフィング</h2>
+            <p>モーフィングはプレイヤーからサンプルを採取してそのプレイヤーの姿になることができます</p>
+            <p>サンプルがミニだとサイズも縮小されます。</p><br><br>
+        </div>
+        <div class="impostor" id="ts">
+            <h2 class="impostor-title">トリックスター</h2>
+            <p>トリックスターはびっくり箱を3つ設置でき、それをベントとして利用できます。</p>
+            <p>箱は全て設置された後に全員が視認できるようになります。びっくり箱はトリックスターのみ使用できます。</p>
+            <p>箱を全て設置した後は強制停電が行えるようになります。</p>
+            <p>強制停電は時間が経過すると自動的に直りますが途中で直すことができません。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="vp">
+            <h2 class="impostor-title">ヴァンパイア</h2>
+            <p>ヴァンパイアは他のプレイヤーを噛むことができます。</p>
+            <p>噛まれたプレイヤーは一定時間後に死亡します。</p>
+            <p>ヴァンパイアがいる場合、プレイヤーはニンニクを置くことができます。</p>
+            <p>ニンニク内ではヴァンパイアの噛むボタンはキルボタンに代わります。</p>
+            <p>緊急会議が始まった時点で噛んだプレイヤーが死んでいなかった場合開始と同時に死亡します。</p>
+            <p>ヴァンパイアがいる場合、ウォーロックは存在しません。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="wl">
+            <h2 class="impostor-title">ウォーロック</h2>
+            <p>ウォーロックは他のプレイヤーを呪い、呪われたプレイヤーが近くにいるプレイヤーをキルします。</p>
+            <p>呪いでキルした後は数秒間動けなくなります。</p>
+            <p>キルボタンと呪いボタンは同期しています。</p>
+            <p>ウォーロックは呪いでインポスター、更には自分を殺すこともできる。</p>
+            <p>ウォーロックがいる場合、ヴァンパイアは存在しません。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="wt">
+            <h2 class="impostor-title">ウィッチ</h2>
+            <p>ウィッチは他のプレイヤーを呪う能力を持っています。</p>
+            <p>呪われたプレイヤーはウィッチが居なくならない限り会議後に死亡します。</p>
+            <p>呪われたプレイヤーは会議画面で特殊なマークがつきます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="nj">
+            <h2 class="impostor-title">ニンジャ</h2>
+            <p>ニンジャは一定時間透明になることができます。更に透明中は移動速度が上昇します。</p>
+            <p>ただし透明中にキルした場合キルクールが若干増加します。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="is">
+            <h2 class="impostor-title">イビルスワッパー</h2>
+            <p>スワッパーは会議で二人の票数を入れ替えることができます。</p>
+            <p>スワッパーは緊急会議を開けず、サボタージュを直せないようにできる。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="sk">
+            <h2 class="impostor-title">シリアルキラー</h2>
+            <p>シリアルキラーは自殺タイマーが付いたインポスターです。</p>
+            <p>キルクールが短い代わりに、自殺タイマーが0になった場合自殺します。</p>
+            <p>自殺を回避するためにはもう一度キルするか会議を行う必要があります。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="nk">
+            <h2 class="impostor-title">ネコカボチャ</h2>
+            <p>自分を殺してきたプレイヤーがいた場合、そのプレイヤーを道連れにします。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="ih">
+            <h2 class="impostor-title">イビルハッカー</h2>
+            <p>どこでもアドミンを見ることができます。制限時間はありません。</p>
+            <p>設定でアドミンを見ながら動けるか設定できます。</p>
+            <p>設定次第でマッドメイトを作り出すことも可能です。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="he">
+            <h2 class="impostor-title">ホークアイ</h2>
+            <p>ホークアイは一定時間画面がズームアウトし、船の大部分を見渡せます。</p>
+            <p>設定でベントに入れるかを決めることができます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="ci">
+            <h2 class="impostor-title">カスタムインポスター</h2>
+            <p>カスタムインポスターは他のインポスターと設定が独立しています。</p>
+            <p>キルクールの長さ、ベント、サボの使用などが設定できます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="as">
+            <h2 class="impostor-title">アサシン</h2>
+            <p>※本家TOR版ニンジャ</p>
+            <p>ターゲットを指定して遠隔でキルできます。</p>
+            <p>キルした後数秒間テレポート前の位置とテレポート先に葉っぱが設置されます。</p>
+            <br><br>
+        </div>
+        <div class="impostor" id="ut">
+            <h2 class="impostor-title">アンダーテイカー</h2>
+            <p>死体を運べます。</p>
+            <p>死体移動中は足が遅くなります。</p>
+            <br><br>
+        </div>
         <script>
             const menu = document.querySelector(".menu");
             const navbar = document.querySelector(".navbar");
@@ -63,6 +291,26 @@
                 } else {
                 navbar.classList.remove("sticky");
                 }
+            });
+
+            $(function(){
+                var headerHeight = $('header').outerHeight() + 150;
+                var urlHash = location.hash;
+                if(urlHash) {
+                    $('body,html').stop().scrollTop(0);
+                    setTimeout(function(){
+                        var target = $(urlHash);
+                        var position = target.offset().top - headerHeight;
+                        $('body,html').stop().animate({scrollTop:position}, 500);
+                    }, 100);
+                }
+                $('a[href^="#"]').click(function(){
+                    var href= $(this).attr("href");
+                    var target = $(href);
+                    var position = target.offset().top - headerHeight;
+                    $('body,html').stop().animate({scrollTop:position}, 500);
+                    return false;
+                });
             });
         </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
